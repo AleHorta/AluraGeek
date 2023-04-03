@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <nav>
@@ -190,22 +192,22 @@
                     </ul>
                 </section>
                 <section>
-                    <form id="formFooter">
+                    <form id="formFooter" autocomplete="off">
                         <h1>Contactanos</h1>
                         <aside class="spaceInfo">
                             <label for="name">Nombre</label>
-                            <input type="text" name="name">
+                            <input type="text" name="name" class="spacetxt">
                         </aside>
                         <aside class="spaceInfo">
                             <label for="message">Escribe tu mensaje</label>
-                            <textarea name="message"></textarea>
+                            <textarea name="message" class="spacetxt tall"></textarea>
                         </aside>
                         <button type="submit" id="send">Enviar Mensaje</button>
                     </form>
                 </section>
             </article>
         </div>
-        <div>
+        <div id="createfor">
             <h4>Creado por Alejandro Horta Olguin<br>2023</h4>
         </div>
     </footer>

@@ -1,0 +1,70 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /*Modificar*/
+    align-items: stretch;
+    text-align: center;
+    background-color: var(--background);
+    margin-top: 2.5rem;
+    height: 360px;
+}
+    #contentFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem 0;
+        gap: 6rem;
+        height: 240px;
+        width: var(--width-max);
+        background-color: var(--background-footer);
+    }
+        #linksFooter {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            list-style: none;
+        }
+            a {
+                text-decoration: none;
+                color: #000000;
+            }
+        #formFooter {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: baseline;
+            height: 100%;
+            
+        }
+            .spaceInfo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+                width: 560px;
+                background-color: var(--var-search);
+                padding: 8px;
+                color: var(--shadow);
+            }
+                .spacetxt {
+                    width: var(--width-max);
+                    border: hidden;
+                }
+                .tall {
+                    height: 60px;
+                    resize: none;
+                }
+            #send {
+                padding: 8px 16px;
+                background-color: var(--highlighted-text);
+                border: none;
+                box-shadow: 0 4px 5px var(--shadow);
+                color: var(--var-search);
+            }
+@media screen and (max-width: 1136px) {
+    footer {
+        overflow: hidden;
+        visibility: hidden;
+    }
+}
