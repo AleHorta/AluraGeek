@@ -76,6 +76,7 @@ nav {
         justify-content: space-between;
         align-items: flex-start;
         width: var(--width-max);
+        margin: auto;
         height: 170px;
         background-color: var(--without);
     }
@@ -101,4 +102,13 @@ nav {
             #search-bar {
                 display: none;
             }
+        .textPromotion {
+            font-size: 20px;
+        }
+        .textPromotion:first-child {
+            font-size: 45px;
+        }
+        #login {
+            padding: 12px 1.5rem;
+        }
     }

@@ -1,7 +1,21 @@
+:root {
+    --test: red;
+    --background: #ececec;
+    --background-footer: #e0eeff;
+    --shadow: #999999;
+    --highlighted-text: #2A7AE4;
+    --width-specific-monitor-footer: 560px;
+    --width-specific-tablet-footer: 400px;
+    --width-specific-phone1-footer: 380px;
+    --width-specific-phone2-footer: 280px;
+    --width-specific-phone2-footer: 170px;
+    --width-max: 100%;
+}
+
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; /*Modificar*/
+    justify-content: space-around;
     align-items: stretch;
     text-align: center;
     background-color: var(--background);
@@ -11,13 +25,19 @@ footer {
     #contentFooter {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         padding: 2rem 0;
-        gap: 6rem;
         height: 240px;
         width: var(--width-max);
         background-color: var(--background-footer);
     }
+        #footerLeft {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 3rem;
+        }
         #linksFooter {
             display: flex;
             flex-direction: column;
@@ -42,7 +62,7 @@ footer {
                 flex-direction: column;
                 justify-content: center;
                 text-align: left;
-                width: 560px;
+                width: var(--width-specific-monitor-footer);
                 background-color: var(--var-search);
                 padding: 8px;
                 color: var(--shadow);
@@ -63,8 +83,29 @@ footer {
                 color: var(--var-search);
             }
 @media screen and (max-width: 1136px) {
+    .spaceInfo {
+        width: var(--width-specific-tablet-footer);
+    }
+    #footerLeft {
+        width: 176px;
+        gap: 0;
+    }
+    #footerLeft section:nth-child(2) {
+        height: 190px;
+    }
+}
+@media screen and (max-width: 807px) {
+    .spaceInfo {
+        width: var(--width-specific-phone1-footer);
+    }
+}
+@media screen and (max-width: 600px) {
     footer {
-        overflow: hidden;
-        visibility: hidden;
+        height: 550px;
+    }
+    #contentFooter {
+        flex-direction: column;
+        align-items: center;
+        height: 460px;
     }
 }

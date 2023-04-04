@@ -90,4 +90,7 @@ main {
     .products {
         width: var(--width-specific-phone2);
     }
+    .prodct {
+        width: 90px;
+    }
 }
