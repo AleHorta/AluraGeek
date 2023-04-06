@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <nav>
+        <article id="navR">
+            <a href="index.html">
+                <img src="img/Logo.png">
+            </a>
+            <form id="search-bar">
+                <input type="text" name="search" id="search-input" placeholder="¿Que desea buscar?">
+                <section class="actions">
+                    <span class="material-symbols-outlined">search</span>
+                </section>
+            </form>
+        </article>
+    </nav>
+    <main>
+        <form id="formLogin">
+            <h1>Iniciar Seción</h1>
+            <input type="text" id="user" placeholder="Escriba su nombre de usuario" required>
+            <input type="password" id="password" placeholder="Escriba su contraseña" required>
+            <button type="submit" id="buttonSend">Entrar</button>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <article id="contentFooter">
+                <aside id="footerLeft">
+                    <section>
+                        <img src="img/Logo.png">
+                    </section>
+                    <section>
+                        <ul id="linksFooter">
+                            <li><a href="">Quienes somos</a></li>
+                            <li><a href="">Politicas de privacidad</a></li>
+                            <li><a href="">Programa de fidelidad</a></li>
+                            <li><a href="">Nuestras Tiendas</a></li>
+                            <li><a href="">Quieres ser Franquiciado?</a></li>
+                            <li><a href="">Anunciate Aqui</a></li>
+                        </ul>
+                    </section>
+                </aside>
+                <section>
+                    <form id="formFooter">
+                        <h1>Contactanos</h1>
+                        <aside class="spaceInfo">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" class="spacetxt">
+                        </aside>
+                        <aside class="spaceInfo">
+                            <label for="message">Escribe tu mensaje</label>
+                            <textarea name="message" class="spacetxt tall"></textarea>
+                        </aside>
+                        <button type="submit" id="send">Enviar Mensaje</button>
+                    </form>
+                </section>
+            </article>
+        </div>
+        <div id="createfor">
+            <h4>Creado por Alejandro Horta Olguin<br>2023</h4>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --test: red;
+    --background: #ececec;
+    --var-search: #ffffff;
+    --shadow: #999999;
+    --highlighted-text: #2A7AE4;
+    --without: transparent;
+}
+body {
+    background-color: var(--background);
+}
+main {
+    height: 260px;
+    margin-bottom: 2.5rem;
+}
+    #formLogin {
+        width: 420px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: auto;
+    }
+        #formLogin > h1 {
+            font-size: 18px;
+        }
+        #user, #password {
+            height: 30px;
+            padding: 10px;
+            border: var(--without);
+        }
+        #buttonSend {
+            background-color: var(--highlighted-text);
+            padding: 16px;
+            border: var(--without);
+            color: var(--var-search);
+            box-shadow: 0 4px 8px var(--shadow);
+        }
+            #buttonSend:hover {
+                cursor: pointer;
+            }
+@media screen and (max-width: 600px) {
+    #formLogin {
+        width: 280px;
+    }
+}
