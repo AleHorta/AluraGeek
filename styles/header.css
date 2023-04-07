@@ -48,13 +48,13 @@ nav {
                         .material-symbols-outlined {
                             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
                         }
-    #login {
+    .btnPage {
         padding: .85rem 2.5rem;
         border: solid 1px var(--highlighted-text);
         color: var(--highlighted-text);
         background-color: var(--background);
     }
-        #login:hover{
+        .btnPage:hover{
             cursor: pointer;
             box-shadow: 0 4px 8px var(--shadow);
         }
@@ -108,7 +108,7 @@ nav {
         .textPromotion:first-child {
             font-size: 45px;
         }
-        #login {
+        .dtnPage {
             padding: 12px 1.5rem;
         }
     }

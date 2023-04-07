@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek - Login</title>
+    <title>AluraGeek - Nuevo Producto</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
@@ -23,13 +23,32 @@
                 </section>
             </form>
         </article>
+        <a class="btnPage" type="button" href="login.html">Inicia Sesión</a>
     </nav>
     <main>
-        <form id="formLogin">
-            <h1>Iniciar Seción</h1>
-            <input type="text" id="user" placeholder="Escriba su nombre de usuario" required>
-            <input type="password" id="password" placeholder="Escriba su contraseña" required>
-            <button type="submit" id="buttonSend">Entrar</button>
+        <form id="formNewproduct" autocomplete="off">
+            <h1>Agrega un nuevo Producto</h1>
+            <aside class="spaceInfo">
+                <label for="url">URl de la imagen</label>
+                <input type="text" name="url" class="spacetxt">
+            </aside>
+            <aside class="spaceInfo">
+                <label for="categoria">Categoria</label>
+                <input type="text" name="categoria" class="spacetxt">
+            </aside>
+            <aside class="spaceInfo">
+                <label for="nameNewproduct">Nombre del nuevo Producto</label>
+                <input type="text" name="nameNewproduct" class="spacetxt">
+            </aside>
+            <aside class="spaceInfo">
+                <label for="costNew">Precio del Nuevo Producto</label>
+                <input type="text" name="costNew" class="spacetxt">
+            </aside>
+            <aside class="spaceInfo">
+                <label for="descripNew">Descripcion del nuevo producto</label>
+                <textarea name="desscriptNew" class="spacetxt tall"></textarea>
+            </aside>
+            <button type="submit" id="send">Enviar Mensaje</button>
         </form>
     </main>
     <footer>
@@ -51,7 +70,7 @@
                     </section>
                 </aside>
                 <section>
-                    <form id="formFooter">
+                    <form id="formFooter" autocomplete="off">
                         <h1>Contactanos</h1>
                         <aside class="spaceInfo">
                             <label for="name">Nombre</label>

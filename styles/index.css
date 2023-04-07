@@ -57,6 +57,12 @@ main {
                 cursor: pointer;
                 font-size: 16px;
             }
+                #newProduct {
+                    padding: .85rem 1.8rem;
+                    border: solid 1px var(--highlighted-text);
+                    color: var(--var-search);
+                    background-color: var(--highlighted-text);
+                }
         .products {
             display: flex;
             flex-direction: row;
@@ -77,13 +83,32 @@ main {
                     color: var(--highlighted-text);
                     cursor: pointer;
                 }
+        #btnProducts {
+            width: var(--width-specific-monitor);
+            height: 4rem;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+    #formNewproduct {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 500px;
+    }
 @media screen and (max-width: 1156px) {
     .products {
+        width: var(--width-specific-tablet);
+    }
+    #btnProducts {
         width: var(--width-specific-tablet);
     }
 }
 @media screen and (max-width: 600px) {
     .products {
+        width: var(--width-specific-phone1);
+    }
+    #btnProducts {
         width: var(--width-specific-phone1);
     }
 }
@@ -93,5 +118,8 @@ main {
     }
     .prodct {
         width: 90px;
+    }
+    #btnProducts {
+        width: var(--width-specific-phone2);
     }
 }
